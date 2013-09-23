@@ -1,0 +1,208 @@
+/* @override 
+	http://cafeteriaman.com/sites/all/themes/cafemanblack/css/layout-fixed.css?f
+	http://cafeteriaman.com/sites/all/themes/cafemanblack/css/layout-fixed.css?4
+	http://cafeteriaman.com/sites/all/themes/cafemanblack/css/layout-fixed.css?5
+*/
+
+/* $Id: layout-fixed.css,v 1.17 2359/11/05 12:09:53 johnalbin Exp $ */
+
+/**
+ * @file
+ * Layout Styling (DIV Positioning)
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+/* The Page GRID */
+/*
+ 1 column { width:   65px; }
+ 2 column { width:  150px; }
+ 3 column { width:  235px; }
+ 4 column { width:  320px; }
+ 5 column { width:  405px; }
+ 6 column { width:  490px; }
+ 7 column { width:  575px; }
+ 8 column { width:  660px; }
+ 9 column { width:  745px; }
+10 column { width:  830px; }
+11 column { width:  915px; }
+12 column { width: 1000px; }
+*/
+
+/*
+ * Body
+ */
+body {
+	min-width: 1000px;
+}
+
+/*#page-wrapper,*/
+#main-wrapper,
+#footer,
+.region-page-closure {
+  /*
+   * If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that. See also the ie6.css file
+   * for the necessary IE5/IE6quirks hack to center a div.
+   */
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+#page {
+}
+
+/*
+ * Header
+ */
+#header {
+}
+
+#header .section {
+}
+
+#search-box {
+}
+
+.region-header {
+  clear: both; /* Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  position: relative;
+}
+
+.not-front #main-wrapper {
+  margin-top: 140px;
+  }
+
+#main {
+}
+
+/*
+ * Content
+ */
+#content,
+.no-sidebars #content {
+  float: left; /* LTR */
+  width: 1000px;
+  margin-left: 0; /* LTR */
+  margin-right: -1000px; /* LTR */ /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+.sidebar-first #content {
+  width: 765px;
+  margin-left: 235px; /* LTR */ /* The width of .region-sidebar-first. */
+  margin-right: -1000px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.sidebar-second #content {
+  width: 765px;
+  margin-left: 0; /* LTR */
+  margin-right: -765px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content {
+  width: 530px;
+  margin-left: 235px; /* LTR */ /* The width of .region-sidebar-first */
+  margin-right: -765px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+#content .section {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * First sidebar
+ */
+.region-sidebar-first {
+  float: left; /* LTR */
+  width: 235px;
+  margin-left: 0; /* LTR */
+  margin-right: -235px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
+
+.region-sidebar-first .section {
+  margin: 0 20px 0 0; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+  float: left; /* LTR */
+  width: 235px;
+  margin-left: 765px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -1000px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.region-sidebar-second .section {
+  margin: 0 0 0 20px; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Footer
+ */
+#footer {
+}
+
+#footer .section {
+}
+
+/*
+ * Closure
+ */
+.region-page-closure /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+/*
+ * Prevent overflowing content
+ */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer,
+.region-page-closure {
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+#navigation {
+  overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
+}
+
+/*
+ * If a div.clearfix doesn't have any content after it and its bottom edge
+ * touches the bottom of the viewport, Firefox and Safari will mistakenly
+ * place several pixels worth of space between the bottom of the div and the
+ * bottom of the viewport. Uncomment this CSS property to fix this.
+ * Note: with some over-large content, this property might cause scrollbars
+ * to appear on the #page-wrapper div.
+ */
+/*
+#page-wrapper {
+  overflow-y: hidden;
+}
+*/
