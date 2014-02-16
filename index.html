@@ -1,0 +1,87 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="fancy/jquery.fancybox.css" type="text/css" media="screen" />
+  </head>
+
+  <body>
+    <div class="videos">
+      
+      <div class="col left">
+        <ul class="list">
+          <li class="videolink"><a class="various fancybox.iframe" rel="group" href="https://www.youtube.com/embed/DbCtpGV_Crg"><img src="img/video1-secret.jpg" alt="The Secret to Serving Healthy Meals Kids Will Eat"/></a></li>
+          <li class="videolink"><a class="various fancybox.iframe" rel="group" href="https://www.youtube.com/embed/8f_VSi0SRXE"><img src="img/video2-business.jpg" alt="The Business of Childhood Nutrition: Funding Healthier School Food"/></a></li>
+          <li class="videolink"><a class="various fancybox.iframe" rel="group" href="https://www.youtube.com/embed/VuvrgESfr1I"><img src="img/video3-integrated.jpg" alt="It's Not Just About Lunch: The Importance of an Integrated Approach"/></a></li>
+        </ul>
+      </div>
+      
+      <div class="col right">
+        <ul class="list">
+          <li class="videolink"><a class="various fancybox.iframe" rel="group" href="https://www.youtube.com/embed/ljdDXBPTk00"><img src="img/video4-benefits.jpg" alt="The Benefits of Locally Sourced School Food"/></a></li>
+          <li class="videolink"><a class="various fancybox.iframe" rel="group" href="https://www.youtube.com/embed/ZK5rwBFBYKQ"><img src="img/video5-tips1.jpg" alt="Tony's Tips for Success: Toward Healthier Snack Foods"/></a></li>
+          <li class="videolink"><a class="various fancybox.iframe" rel="group" href="https://www.youtube.com/embed/NW4vwP4xl3k"><img src="img/video6-tips2.jpg" alt="Tony's Tips for Success: Make a Plan and Get Parents Involved"/></a></li>
+        </ul>
+      </div>
+    
+      <div class="clear"></div>
+    
+    </div>
+    
+    <style>
+      .clear {
+        height: 1;
+        visibility: hidden;
+        display: block;
+        clear:both;
+      }
+    
+      .videos {
+        width: 674px;
+        margin: 0 auto;
+        padding: 0;
+      }
+      
+      .videos .col {
+        width: 327px;
+        margin: 0;
+        float: left;
+      }
+    
+      .videos .col.left {
+        margin-right: 20px;
+      }
+
+      .videos .col ul.list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .videos .col ul.list img {
+        max-width: 100%;
+      }
+    
+    </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="fancy/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="fancy/helpers/jquery.fancybox-media.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".various").fancybox({
+          maxWidth  : 800,
+          maxHeight  : 600,
+          fitToView  : false,
+          width    : '70%',
+          height    : '70%',
+          autoSize  : false,
+          closeClick  : false,
+          openEffect  : 'none',
+          closeEffect  : 'none'
+        });
+      });
+
+    </script>
+
+  </body>
+</html>
