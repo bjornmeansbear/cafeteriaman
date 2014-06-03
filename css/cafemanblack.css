@@ -221,7 +221,7 @@ h1#site-name, div#site-name {
 .front #block-block-9 p.bryant { color: #FBFBDA; line-height: 100%; margin: 0; }
 .front #block-block-9 p.united { margin: 8px 0 24px 0;}
 .front #header {
-  background: transparent url(i/HomeBG.png) center -30px no-repeat;
+  background: transparent url(i/cafeman-header-2014.png) center -30px no-repeat;
   height: 580px;
   width: 100%;
   }
@@ -448,4 +448,12 @@ div.description.mollom-privacy,
 .page-trailer h1.title 
 { display: none; }  
   
+.node-unpublished {
+  background-color: transparent;
+}
+
+.node-unpublished div.unpublished, .comment-unpublished div.unpublished {
+  opacity: .25;
+}
+
 /* custom CSS by kristian bjornard */
