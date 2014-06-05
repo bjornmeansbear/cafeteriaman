@@ -81,8 +81,8 @@ div.node.node-type-event div.field-type-date {
 .big { font-size: 133%; margin:0; }
 .small { line-height: 133%;margin:5px 0 0 0; }
 /**/
-#main #content .section #content-area a { color: #FBFBDA; text-decoration: none; }
-#main #content .section #content-area a:hover, #main #content .section #content-area a:focus { color: black; background: #FBFBDA; }
+#content-area a { color: #FBFBDA; text-decoration: none; }
+#content-area a:hover, #content-area a:focus { color: black; background: #FBFBDA; }
 .not-front h1.title { color: #FBFBDA; }
 
 /* BODY
@@ -166,8 +166,8 @@ h1#site-name, div#site-name {
 	text-indent: -99999px;
 	width: 80px;
 	}
-#footer #block-menu-menu-socialnetwork ul.menu li.first a { background: url(http://officeofkb.com/sites/all/i/f_logo_80.png) center center no-repeat; }
-#footer #block-menu-menu-socialnetwork li.last a { background: url(http://officeofkb.com/sites/all/i/t_logo_80.png) center center no-repeat; }
+#footer #block-menu-menu-socialnetwork ul.menu li.first a { background: url(i/fb.png) center center no-repeat; }
+#footer #block-menu-menu-socialnetwork li.last a { background: url(/i/twitter.png) center center no-repeat; }
 #footer .block, #footer p { margin: 0; }
 #footer #block-block-5 {
 	text-transform: uppercase;
@@ -454,6 +454,11 @@ div.description.mollom-privacy,
 
 .node-unpublished div.unpublished, .comment-unpublished div.unpublished {
   opacity: .25;
+}
+
+#blocks td a {
+  background: transparent;
+  color: darkgray;
 }
 
 /* custom CSS by kristian bjornard */
