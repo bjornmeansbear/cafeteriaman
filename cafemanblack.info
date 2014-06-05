@@ -65,6 +65,7 @@ regions[sidebar_second] = Second sidebar
 regions[navigation]     = Navigation bar
 regions[highlight]      = Highlighted content
 regions[content_top]    = Content top
+regions[embeddedvideo]  = Place to Stick Video on Homepage
 regions[content_bottom] = Content bottom
 regions[header]         = Header
 regions[anouncement]    = Anouncement

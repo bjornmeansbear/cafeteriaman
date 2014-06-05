@@ -198,6 +198,10 @@
 
         <?php print $content_top; ?>
 
+        <div id="embedded-video">
+          <?php print $embeddedvideo; ?>
+        </div>
+
         <div id="content-area">
           <?php print $content; ?>
         </div>
