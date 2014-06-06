@@ -167,7 +167,7 @@ h1#site-name, div#site-name {
 	width: 80px;
 	}
 #footer #block-menu-menu-socialnetwork ul.menu li.first a { background: url(i/fb.png) center center no-repeat; }
-#footer #block-menu-menu-socialnetwork li.last a { background: url(/i/twitter.png) center center no-repeat; }
+#footer #block-menu-menu-socialnetwork ul.menu li.last a { background: url(i/twitter.png) center center no-repeat; }
 #footer .block, #footer p { margin: 0; }
 #footer #block-block-5 {
 	text-transform: uppercase;
