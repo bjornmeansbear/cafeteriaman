@@ -1,0 +1,51 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="fancy/jquery.fancybox.css" type="text/css" media="screen" />
+  </head>
+
+  <body>
+    <div class="fb">
+      
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=221599814531584&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      </script>    
+
+      <div class="fb-like-box" data-href="https://www.facebook.com/CafeteriaMan" data-width="235px" data-colorscheme="dark" data-show-faces="false" data-header="true" data-stream="true" data-show-border="false"></div>
+    
+    </div>
+    
+    <style>
+      body { background: black; }
+      .fb-like-box { margin: 20px auto; width: 235px; display: block;}
+    
+    </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="fancy/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="fancy/helpers/jquery.fancybox-media.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".various").fancybox({
+          maxWidth  : 800,
+          maxHeight  : 600,
+          fitToView  : false,
+          width    : '70%',
+          height    : '70%',
+          autoSize  : false,
+          closeClick  : false,
+          openEffect  : 'none',
+          closeEffect  : 'none'
+        });
+      });
+
+    </script>
+
+  </body>
+</html>
