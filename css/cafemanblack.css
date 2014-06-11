@@ -1,10 +1,3 @@
-/* @override 
-	http://cafeteriaman.com/sites/all/themes/cafemanblack/css/cafemanblack.css?p
-	http://cafeteriaman.com/sites/all/themes/cafemanblack/css/cafemanblack.css?f
-	http://cafeteriaman.com/sites/all/themes/cafemanblack/css/cafemanblack.css?4
-	http://cafeteriaman.com/sites/all/themes/cafemanblack/css/cafemanblack.css?5
-*/
-
 /* $Id: pages.css,v 3.0 2011/02/28 03:04:00 bjornmeansbear Exp $ */
 
 /**
@@ -38,7 +31,7 @@
     src: url('ff/bryant_bold-webfont.eot?iefix') format('eot'), url('ff/bryant_bold-webfont.woff') format('woff'), url('ff/bryant_bold-webfont.ttf') format('truetype'), url('ff/bryant_bold-webfont.svg#webfontcWCITtll') format('svg');
     font-weight: normal;
     font-style: normal;
-	}
+  }
 /* united */
 @font-face {
   font-family: 'UnitedItalicCondBold';
@@ -143,71 +136,6 @@ h1#site-name, div#site-name {
 .region-sidebar-second { }
 .region-sidebar-second .section { }
 
-/* Footer
----------------------------------------------------------------------- */
-#footer { font-size: 75%; text-align: center; margin-top: 20px; }
-#footer .section { }
-#footer #block-menu-menu-socialnetwork { margin: -10px 0 10px 0; text-align: left; }
-#footer #block-menu-menu-socialnetwork h2.title {
-  color: #808080;
-  font-family: 'BryantBold', helvetica, arial, sans-serif;
-  font-size: 100%;
-  font-weight: normal;
-  margin: 0 0 2px 0; 
-  text-align: left;
-  text-transform: uppercase;
-  }
-#footer #block-menu-menu-socialnetwork ul.menu { margin: 0; padding: 0; }
-#footer #block-menu-menu-socialnetwork ul.menu li { display: inline-block; text-align: left; margin: 0; padding: 0; }
-#footer #block-menu-menu-socialnetwork ul.menu li a {
-	display: inline-block;
-	height: 80px;
-	overflow: hidden;
-	text-indent: -99999px;
-	width: 80px;
-	}
-#footer #block-menu-menu-socialnetwork ul.menu li.first a { background: url(i/fb.png) center center no-repeat; }
-#footer #block-menu-menu-socialnetwork ul.menu li.last a { background: url(i/twitter.png) center center no-repeat; }
-#footer .block, #footer p { margin: 0; }
-#footer #block-block-5 {
-	text-transform: uppercase;
-	}
-#footer p.bryant.big {
-	border-top: 1px solid #FBFBDA;
-	padding-top: 10px;
-	}
-#footer p.bryant.small {
-	border-bottom: 1px solid #FBFBDA;
-	margin-bottom: 12px;
-	padding-bottom: 12px;
-	}
-#footer {
-  color:  #808080; 
-  } 
-#footer #block-menu-primary-links { margin: 0; padding: 0; }
-#footer #block-menu-primary-links h2.title { display: none; }
-#footer #block-menu-primary-links ul.menu li a {
-  color:  #808080; 
-  text-decoration: none;
-  }
-#footer #block-menu-primary-links ul.menu li.expanded > a {
-  color: #A0A0A0;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  }
-#footer #block-block-12 {
-	position: fixed;
-	top: 20px;
-	right: 0;
-	text-align: left;
-	}
-#footer #block-block-12 .content .fb,
-#footer #block-block-12 .content .twit {
-	margin: 0;
-	padding: 0;
-	width: 110px;
-	}
 
 /* FRONT PAGE
 ---------------------------------------------------------------------- */
@@ -454,8 +382,91 @@ div.description.mollom-privacy,
   color: darkgray;
 }
 
-/* New Footer Styles
+/* Footer
 ---------------------------------------------------------------------- */
+#footer { color:  #808080; font-size: 75%; text-align: center; margin-top: 20px; }
+
+#footer #block-menu-menu-socialnetwork { margin: -10px 0 10px 0; text-align: left; }
+
+#footer #block-menu-menu-socialnetwork h2.title {
+  color: #808080;
+  font-family: 'BryantBold', helvetica, arial, sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0 0 2px 0; 
+  text-align: left;
+  text-transform: uppercase;
+  }
+
+#footer #block-menu-menu-socialnetwork ul.menu { margin: 0; padding: 0; }
+
+#footer #block-menu-menu-socialnetwork ul.menu li { display: inline-block; text-align: left; margin: 0; padding: 0; }
+
+#footer #block-menu-menu-socialnetwork ul.menu li a {
+  display: inline-block;
+  height: 80px;
+  overflow: hidden;
+  text-indent: -99999px;
+  width: 80px;
+  }
+
+#footer #block-menu-menu-socialnetwork ul.menu li.first a { background: url(i/fb.png) center center no-repeat; }
+
+#footer #block-menu-menu-socialnetwork ul.menu li.last a { background: url(i/twitter.png) center center no-repeat; }
+
+#footer .block, #footer p { margin: 0; }
+
+#footer #block-block-5 {
+  text-transform: uppercase;
+  }
+
+#footer p.bryant.big {
+  border-top: 1px solid #FBFBDA;
+  padding-top: 10px;
+  }
+
+#footer p.bryant.small {
+  border-bottom: 1px solid #FBFBDA;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  }
+
+#footer #block-menu-primary-links h2.title { display: none; }
+
+#footer #block-menu-primary-links ul.menu li a {
+  color:  #808080; 
+  text-decoration: none;
+  display: block;
+  padding: 1px 0;
+  }
+
+#footer #block-menu-primary-links ul.menu li.expanded > a {
+  color: #A0A0A0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  }
+
+#footer #block-block-12 {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  text-align: left;
+  }
+
+#footer #block-block-12 .content .fb,
+
+#footer #block-block-12 .content .twit {
+  margin: 0;
+  padding: 0;
+  width: 110px;
+  }
+
+.region-footer-top {
+  border-bottom: 1px solid #FBFBDA;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
 
 .region-footer {
   margin: 0 -15px;
@@ -473,3 +484,28 @@ div.description.mollom-privacy,
   padding: 0 15px;
   text-align: left;
 }
+
+.region-footer .menu {
+  margin: 0;
+  padding: 0;
+}
+
+.region-footer .menu,
+.region-footer .menu li {
+  list-style: none;
+}
+
+.region-footer li.expanded {
+  margin-top: 1em;
+}
+
+.region-footer li.expanded.first {
+  margin-top: 0;
+}
+
+#footer #block-menu-primary-links ul.menu li a:hover {
+  color:  black;
+  background: #FBFBDA;
+  padding: 1px;
+}
+

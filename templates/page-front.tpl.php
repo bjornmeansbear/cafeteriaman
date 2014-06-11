@@ -220,16 +220,28 @@
 
     </div></div> <!-- /#main, /#main-wrapper -->
 
-    <?php if ($footer || $footer_message): ?>
-      <div id="footer"><div class="section">
+    <?php if ($footer || $footer_top || $footer_message): ?>
+      <div id="footer">
+        <div class="section clearfix">
 
-        <?php if ($footer_message): ?>
-          <div id="footer-message"><?php print $footer_message; ?></div>
-        <?php endif; ?>
+          <?php if ($footer_top): ?>
+          <div class="top">
+            <?php print $footer_top; ?>
+          </div>
+          <?php endif; ?>
+          
+          <?php if ($footer_message): ?>
+            <div id="footer-message"><?php print $footer_message; ?></div>
+          <?php endif; ?>
+  
+          <?php if ($footer): ?>
+          <div class="main-footer clearfix">
+            <?php print $footer; ?>
+          </div>
+          <?php endif; ?>
 
-        <?php print $footer; ?>
-
-      </div></div> <!-- /.section, /#footer -->
+        </div>
+      </div> <!-- /.section, /#footer -->
     <?php endif; ?>
 
   </div></div> <!-- /#page, /#page-wrapper -->
