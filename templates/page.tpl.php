@@ -212,7 +212,7 @@
 
     <?php if ($footer || $footer_top || $footer_message): ?>
       <div id="footer">
-        <div class="section">
+        <div class="section clearfix">
 
           <?php if ($footer_top): ?>
           <div class="top">
@@ -224,7 +224,11 @@
             <div id="footer-message"><?php print $footer_message; ?></div>
           <?php endif; ?>
   
-          <?php print $footer; ?>
+          <?php if ($footer): ?>
+          <div class="main-footer clearfix">
+            <?php print $footer; ?>
+          </div>
+          <?php endif; ?>
 
         </div>
       </div> <!-- /.section, /#footer -->

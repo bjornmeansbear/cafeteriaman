@@ -181,18 +181,11 @@ h1#site-name, div#site-name {
 	margin-bottom: 12px;
 	padding-bottom: 12px;
 	}
-#footer #block-block-6,
-#footer #block-menu-primary-links,
-#footer #block-block-8 {
+#footer {
   color:  #808080; 
   } 
 #footer #block-menu-primary-links { margin: 0; padding: 0; }
 #footer #block-menu-primary-links h2.title { display: none; }
-#footer #block-menu-primary-links ul.menu { display: inline-block; margin: 0 5px; padding: 0; text-align: center; }
-#footer #block-menu-primary-links ul.menu li {
-  display: inline-block;
-  margin: 0 5px;
-  }
 #footer #block-menu-primary-links ul.menu li a {
   color:  #808080; 
   text-decoration: none;
@@ -461,4 +454,22 @@ div.description.mollom-privacy,
   color: darkgray;
 }
 
-/* custom CSS by kristian bjornard */
+/* New Footer Styles
+---------------------------------------------------------------------- */
+
+.region-footer {
+  margin: 0 -15px;
+}
+
+.block.quarter {
+  width: 25%;
+}
+
+.block.columns {
+  float: left;
+}
+
+.columns .content {
+  padding: 0 15px;
+  text-align: left;
+}
