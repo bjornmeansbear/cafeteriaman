@@ -31,7 +31,7 @@
     src: url('ff/bryant_bold-webfont.eot?iefix') format('eot'), url('ff/bryant_bold-webfont.woff') format('woff'), url('ff/bryant_bold-webfont.ttf') format('truetype'), url('ff/bryant_bold-webfont.svg#webfontcWCITtll') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 /* united */
 @font-face {
   font-family: 'UnitedItalicCondBold';
@@ -39,14 +39,14 @@
   src: url('ff/uniteditaliccdbd-webfont.eot?iefix') format('eot'), url('ff/uniteditaliccdbd-webfont.woff') format('woff'), url('ff/uniteditaliccdbd-webfont.ttf') format('truetype'), url('ff/uniteditaliccdbd-webfont.svg#webfontrnGFj3dv') format('svg');
   font-weight: normal;
   font-style: normal;
-  }
+}
 /* typeface assignment */    
 p.bryant, 
 #primary ul li.expanded > a,
 #content h1.title {
   font-family: 'BryantBold', helvetica, arial, sans-serif;
   font-weight: normal;
-  }
+}
 p.united,
 div.views-field-field-edt-value,
 div.node.node-type-event div.field-type-date {
@@ -56,14 +56,14 @@ div.node.node-type-event div.field-type-date {
   letter-spacing: 1px;
   line-height: 24px;
   text-transform: uppercase;
-  }
+}
   
 #content h1.title {
   font-size: 1.5em;
   font-weight: normal;
   letter-spacing: 2px;
   text-transform: uppercase;  
-  }
+}
 
 /* type colors */
 .lightyellow { color: #FBFBDA /*rgb(251,251,218)*/; }
@@ -103,7 +103,7 @@ body.not-front { background: black url(i/normalBG.png) center -55px no-repeat; }
   top: 50px;
   right: 50%;
   z-index: 2;
-  }
+}
 h1#site-name, div#site-name {
   color: white;
   margin: 0;
@@ -111,12 +111,12 @@ h1#site-name, div#site-name {
   line-height: 1.3em;
   /**/
   display:none;
-  }
+}
 #site-name a:link,
 #site-name a:visited {
   color: #000;
   text-decoration: none;
-  }
+}
 #site-name a:hover, #site-name a:focus { text-decoration: underline; }
 
 /* MAIN (container for everything else)
@@ -145,7 +145,7 @@ h1#site-name, div#site-name {
   background: transparent url(i/cafeman-header-2014.png) center -30px no-repeat;
   height: 580px;
   width: 100%;
-  }
+}
 .front #kids {
   background: white url(i/kids.jpg) center center repeat-x scroll;
   border: 4px solid black;
@@ -168,17 +168,17 @@ h1#site-name, div#site-name {
   font-weight: normal;
   letter-spacing: 1px;
   text-transform: uppercase;  
-  }
+}
 .front #block-views-screenings-block_1 div.views-row,
 .node-type-event #block-views-screenings-block_1 div.views-row {
   display: block;
   margin: 20px 0 !important;
-  }
+}
 .front #block-views-screenings-block_1 div.views-row span.date-display-single,
 .node-type-event #block-views-screenings-block_1 div.views-row span.date-display-single {
   display: block;
   /*margin-bottom: 10px;*/
-  }
+}
 div.quote {
   font-size: 133%;
   line-height: 150%;
@@ -192,7 +192,7 @@ div.quote p.byline {
   letter-spacing: 1px;
   margin-bottom: 40px;
   text-transform: uppercase;  
-  }
+}
 .region-sidebar-second a, div#block-views-screenings-block_1 div.view-screenings div.views-field-title a {
   color: #FBFBDA;
   text-decoration: none;
@@ -207,7 +207,7 @@ div.quote p.byline {
 ---------------------------------------------------------------------- */
 .page-contact input.form-text {
   width: 95.5%;
-  }
+}
 
 /* SCREENINGS PAGE
 ---------------------------------------------------------------------- */
@@ -242,7 +242,7 @@ div.quote p.byline {
   font-weight: normal;
   letter-spacing: 0;
   text-transform: uppercase;
-  }
+}
   
 .page-screenings .region-content-bottom #block-views-screenings-block_2 div.views-row {
   margin-bottom: 1em;
@@ -331,7 +331,7 @@ table#attachments tr.odd { background: rgba(240,240,240,.25); }
   top: 50px;
   left: 0;
   z-index: 2;
-  }
+}
 }
 
 /* Misc. Final Hacks and Tweaks
@@ -339,7 +339,7 @@ table#attachments tr.odd { background: rgba(240,240,240,.25); }
 /* admin table fix */
 .section-admin table tr.draggable {
   color: black;
-  }
+}
 /* display: none; tricks */
 div.description.mollom-privacy,
 .page-trailer h1.title 
@@ -372,7 +372,7 @@ div.description.mollom-privacy,
   margin: 0 0 2px 0; 
   text-align: left;
   text-transform: uppercase;
-  }
+}
 
 #footer #block-menu-menu-socialnetwork ul.menu { margin: 0; padding: 0; }
 
@@ -384,7 +384,7 @@ div.description.mollom-privacy,
   overflow: hidden;
   text-indent: -99999px;
   width: 80px;
-  }
+}
 
 #footer #block-menu-menu-socialnetwork ul.menu li.first a { background: url(i/fb.png) center center no-repeat; }
 
@@ -394,18 +394,18 @@ div.description.mollom-privacy,
 
 #footer #block-block-5 {
   text-transform: uppercase;
-  }
+}
 
 #footer p.bryant.big {
   border-top: 1px solid #FBFBDA;
   padding-top: 10px;
-  }
+}
 
 #footer p.bryant.small {
   border-bottom: 1px solid #FBFBDA;
   margin-bottom: 12px;
   padding-bottom: 12px;
-  }
+}
 
 #footer #block-menu-primary-links h2.title { display: none; }
 
@@ -423,14 +423,14 @@ div.description.mollom-privacy,
 #footer #block-menu-primary-links ul.menu li a {
   display: block;
   padding: 1px 0;
-  }
+}
 
 #footer #block-menu-primary-links ul.menu li.expanded > a {
   color: #A0A0A0;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  }
+}
 
 .region-footer-top {
   border-bottom: 1px solid #FBFBDA;
