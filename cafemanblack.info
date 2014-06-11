@@ -69,6 +69,7 @@ regions[embeddedvideo]  = Place to Stick Video on Homepage
 regions[content_bottom] = Content bottom
 regions[header]         = Header
 regions[anouncement]    = Anouncement
+regions[footer_top]     = Footer Top
 regions[footer]         = Footer
 regions[page_closure]   = Page closure
 
