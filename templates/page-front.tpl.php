@@ -220,13 +220,14 @@
 
     </div></div> <!-- /#main, /#main-wrapper -->
 
-    <?php if ($footer || $footer_top || $footer_message): ?>
+    <?php if ($footer || $footer_top || $footer_message || $footer_col1 || $footer_col2 || $footer_col3 || $footer_col4 || $footer_col5): ?>
       <div id="footer">
         <div class="section clearfix">
 
           <?php if ($footer_top): ?>
-          <div class="top">
+          <div class="top clearfix">
             <?php print $footer_top; ?>
+            <br class="clear">
           </div>
           <?php endif; ?>
           
@@ -239,6 +240,24 @@
             <?php print $footer; ?>
           </div>
           <?php endif; ?>
+
+          <div id="footer-bottom" class="clearfix">
+            <div class="columns fifths">
+              <?php print $footer_col1; ?>
+            </div>
+            <div class="columns fifths">
+              <?php print $footer_col2; ?>
+            </div>
+            <div class="columns fifths">
+              <?php print $footer_col3; ?>
+            </div>
+            <div class="columns fifths">
+              <?php print $footer_col4; ?>
+            </div>
+            <div class="columns fifths">
+              <?php print $footer_col5; ?>
+            </div>
+          </div>
 
         </div>
       </div> <!-- /.section, /#footer -->

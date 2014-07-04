@@ -67,6 +67,7 @@ div.node.node-type-event div.field-type-date {
 
 /* type colors */
 .lightyellow { color: #FBFBDA /*rgb(251,251,218)*/; }
+.lightgray   { color: #A0A0A0; }
 .red { color: #E7002D; }
 .gray { color:  #808080; }
 /* type sizes, etc */
@@ -202,6 +203,35 @@ div.quote p.byline {
   color: #E7002D;
   padding-bottom: 1px;
   }  
+
+.not-front .region-sidebar-first {
+  margin-top: 260px;
+}
+
+/* First sidebar special stuff
+---------------------------------------------------------------------- */
+#block-menu-menu-socialnetwork { margin: 30px 0 0 0; text-align: left; }
+
+#block-menu-menu-socialnetwork h2.title {
+display: none;
+}
+
+#block-menu-menu-socialnetwork ul.menu { margin: 0; padding: 0; list-style: none; }
+
+#block-menu-menu-socialnetwork ul.menu li { display: inline-block; text-align: left; margin: 0 10px 0 0; padding: 0; }
+
+#block-menu-menu-socialnetwork ul.menu li a {
+  display: block;
+  height: 80px;
+  overflow: hidden;
+  text-indent: -99999px;
+  width: 80px;
+}
+
+#block-menu-menu-socialnetwork ul.menu li.first a { background: url(i/fb.png) center center no-repeat; }
+
+#block-menu-menu-socialnetwork ul.menu li.last a { background: url(i/twitter.png) center center no-repeat; }
+
 
 /* CONTACT PAGE
 ---------------------------------------------------------------------- */
@@ -360,6 +390,12 @@ div.description.mollom-privacy,
 
 /* Footer
 ---------------------------------------------------------------------- */
+#footer .bryant.big {
+  font-size: 175%;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
 #footer { color:  #808080; font-size: 75%; text-align: center; margin-top: 20px; }
 
 #footer #block-menu-menu-socialnetwork { margin: -10px 0 10px 0; text-align: left; }
@@ -390,24 +426,11 @@ div.description.mollom-privacy,
 
 #footer #block-menu-menu-socialnetwork ul.menu li.last a { background: url(i/twitter.png) center center no-repeat; }
 
-#footer .block, #footer p { margin: 0; }
-
 #footer #block-block-5 {
   text-transform: uppercase;
 }
 
-#footer p.bryant.big {
-  border-top: 1px solid #FBFBDA;
-  padding-top: 10px;
-}
-
-#footer p.bryant.small {
-  border-bottom: 1px solid #FBFBDA;
-  margin-bottom: 12px;
-  padding-bottom: 12px;
-}
-
-#footer #block-menu-primary-links h2.title { display: none; }
+#footer p { margin: 0;}
 
 #footer a {
   color:  #808080; 
@@ -432,44 +455,56 @@ div.description.mollom-privacy,
   text-transform: uppercase;
 }
 
-.region-footer-top {
+#footer .top {
   border-bottom: 1px solid #FBFBDA;
-  padding-bottom: 10px;
   margin-bottom: 15px;
 }
 
-.region-footer {
-  margin: 0 -15px;
+#footer .main-footer {
+  border-bottom: 1px solid #FBFBDA;
+  margin-bottom: 15px;
 }
 
-.block.quarter {
+#footer-bottom {
+  margin: 0 -10px;
+}
+
+#footer-bottom .quarter {
   width: 25%;
 }
 
-.block.columns {
+#footer-bottom .fifths {
+  width: 20%;
+}
+
+#footer-bottom .columns {
   float: left;
 }
 
-.columns .content {
-  padding: 0 15px;
+.columns .region {
+  padding: 0 10px;
   text-align: left;
 }
 
-.region-footer .menu {
+.columns .region .block {
+  margin-bottom: 15px;
+}
+
+#footer-bottom .menu {
   margin: 0;
   padding: 0;
 }
 
-.region-footer .menu,
-.region-footer .menu li {
+#footer-bottom .menu,
+#footer-bottom .menu li {
   list-style: none;
 }
 
-.region-footer li.expanded {
+#footer-bottom li.expanded {
   margin-top: 1em;
 }
 
-.region-footer li.expanded.first {
+#footer-bottom li.expanded.first {
   margin-top: 0;
 }
 
@@ -480,4 +515,42 @@ div.description.mollom-privacy,
   border: none;
 }
 
+#footer .block-menu h2.title {
+  font-size: inherit;
+  text-transform: uppercase;
+  color: #A0A0A0;
+  line-height: inherit;
+}
+
+/* LAUREL's BLOCK */
+#block-block-5 {clear:both;}
+
+#footer #block-menu-menu-socialnetwork {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+#footer #block-block-15 {
+  border: 0;
+  margin: 0 auto;
+  padding: 0;
+  width:auto;
+  text-align: center
+}
+
+#footer #block-block-15 .content {
+  border:0;
+  margin: 0;
+  padding: 0 ;
+  width:auto;
+}
+
+#footer #block-block-15 .content img.laurel {
+  display: inline-block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 

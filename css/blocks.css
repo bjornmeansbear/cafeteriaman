@@ -91,36 +91,3 @@
 #block-user-3 /* "Who's online" block for a list of the online users */ {
 }
 
-/* LAUREL's BLOCK */
-#block-block-5 {clear:both;}
-
-#footer #block-menu-menu-socialnetwork {
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-}
-
-#footer #block-block-15 {
-  border: 0;
-  float: right;
-  margin: 0 0 10px 0;
-  padding: 0;
-  text-align: right;
-  width:800px;
-}
-
-#footer #block-block-15 .content {
-  border:0;
-  margin: 0 !important;
-  padding: 0 !important;
-  width:800px;
-}
-
-#footer #block-block-15 .content img.laurel {
-  float: right;
-  display: inline;
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
