@@ -42,7 +42,7 @@
 }
 /* typeface assignment */    
 p.bryant, 
-#primary ul li.expanded > a,
+#primary > ul > li > a,
 #content h1.title {
   font-family: 'BryantBold', helvetica, arial, sans-serif;
   font-weight: normal;
