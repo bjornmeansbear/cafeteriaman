@@ -82,6 +82,12 @@ li a.active { color: #000; text-decoration: line-through; }
   margin-bottom: 15px;
   text-align: right;
   }  
+
+#primary > ul > li.leaf {
+  background: rgb(102,170,34);
+  text-align: center;
+}
+
 #primary ul li.expanded > ul {
   background: black;
   display: none;
@@ -110,10 +116,15 @@ li a.active { color: #000; text-decoration: line-through; }
   letter-spacing: 2px;
   padding: 7px 10px;
   text-transform: uppercase;
-  } 
-#primary ul li.leaf > a { letter-spacing: 1px; padding: 7px 10px; } 
-#primary ul li.leaf > a:hover { color: white; text-decoration: underline; } 
+  text-decoration: none;
+  }
   
+#primary ul li.leaf > a { letter-spacing: 1px; padding: 7px 10px; } 
+#primary ul li.expanded li.leaf > a:hover { color: white; text-decoration: underline; } 
+#primary > ul > li.leaf a:hover {
+  color:#F0E030;
+}
+
 @media screen and (max-width: 1000px) {
 #primary {
   width: 235px;
