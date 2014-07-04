@@ -396,7 +396,15 @@ div.description.mollom-privacy,
   margin-bottom: 15px;
 }
 
-#footer { color:  #808080; font-size: 75%; text-align: center; margin-top: 20px; }
+#footer { 
+  color:  #808080; 
+  font-size: 75%; 
+  text-align: center; 
+  margin-top: 30px;
+  /**/
+  border-top: 1px solid #FBFBDA;
+  padding-top: 15px;
+  }
 
 #footer #block-menu-menu-socialnetwork { margin: -10px 0 10px 0; text-align: left; }
 
@@ -543,12 +551,30 @@ div.description.mollom-privacy,
 #footer #block-block-15 .content {
   border:0;
   margin: 0;
-  padding: 0 ;
+  padding: 0;
   width:auto;
+  height: 80px;
 }
+
+#footer #block-block-15 .content p {
+  margin: 0;
+  padding: 0;
+  width:auto;
+  height: 80px;
+}
+
+#footer #block-block-15 .content p:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -1%; /* Adjusts for spacing */
+}
+
 
 #footer #block-block-15 .content img.laurel {
   display: inline-block;
+  vertical-align: middle;
   border: 0;
   margin: 0;
   padding: 0;
