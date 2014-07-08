@@ -140,8 +140,9 @@ h1#site-name, div#site-name {
 
 /* FRONT PAGE
 ---------------------------------------------------------------------- */
+.front .region-sidebar-first { position: relative; top: -433px; }
 .front #block-block-9 p.bryant { color: #FBFBDA; line-height: 100%; margin: 0; }
-.front #block-block-9 p.united { margin: 8px 0 24px 0;}
+.front #block-block-9 p.united { margin: 8px 0 24px 0; line-height: 1.15;}
 .front #header {
   background: transparent url(i/homebg-jul2014.png) center -30px no-repeat;
   height: 580px;
@@ -181,8 +182,8 @@ h1#site-name, div#site-name {
   /*margin-bottom: 10px;*/
 }
 div.quote {
-  font-size: 133%;
-  line-height: 150%;
+  font-size: 125%;
+  line-height: 133%;
   text-indent: -7px;
   }  
 div.quote p.byline {
@@ -206,6 +207,12 @@ div.quote p.byline {
 
 .not-front .region-sidebar-first {
   margin-top: 260px;
+}
+
+#embedded-video {
+  width: 745px;
+  margin-left: 255px;
+  margin-bottom: 40px;
 }
 
 /* First sidebar special stuff

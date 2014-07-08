@@ -178,6 +178,12 @@
 
     <div id="main-wrapper"><div id="main" class="clearfix">
 
+      <?php if ($embeddedvideo): ?>
+        <div id="embedded-video">
+          <?php print $embeddedvideo; ?>
+        </div>
+      <?php endif; ?>
+
       <div id="content" class="column"><div class="section">
 
         <?php if ($mission): ?>
@@ -197,10 +203,6 @@
         <?php print $help; ?>
 
         <?php print $content_top; ?>
-
-        <div id="embedded-video">
-          <?php print $embeddedvideo; ?>
-        </div>
 
         <div id="content-area">
           <?php print $content; ?>
