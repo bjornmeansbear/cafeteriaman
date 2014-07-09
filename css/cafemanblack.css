@@ -140,7 +140,10 @@ h1#site-name, div#site-name {
 
 /* FRONT PAGE
 ---------------------------------------------------------------------- */
-.front .region-sidebar-first { position: relative; top: -433px; }
+.front .region-sidebar-first { 
+  margin-top: -600px; 
+}
+
 .front #block-block-9 p.bryant { color: #FBFBDA; line-height: 100%; margin: 0; }
 .front #block-block-9 p.united { margin: 8px 0 24px 0; line-height: 1.15;}
 .front #header {
@@ -203,20 +206,49 @@ div.quote p.byline {
   border-bottom: 1px solid #E7002D;
   color: #E7002D;
   padding-bottom: 1px;
-  }  
+  }
 
-.not-front .region-sidebar-first {
-  margin-top: 260px;
+.callout {
+  text-align: center;
+  color: #FBFBDA;
+  font-weight: bold;
+  font-family: 'BryantBold',helvetica,arial,sans-serif;
+  letter-spacing: 1px;
+}
+
+.callout a {
+  background: #E7002D;
+  color: #FBFBDA;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.callout a:hover {
+  background: #FBFBDA;
+  color: black;
+}
+
+.front #yekra-player {
+  margin: 30px 0;
 }
 
 #embedded-video {
   width: 745px;
   margin-left: 255px;
   margin-bottom: 40px;
+  min-height: 559px;
 }
 
 /* First sidebar special stuff
 ---------------------------------------------------------------------- */
+.not-front .region-sidebar-first {
+  margin-top: 260px;
+}
+
 #block-menu-menu-socialnetwork { margin: 30px 0 0 0; text-align: left; }
 
 #block-menu-menu-socialnetwork h2.title {
