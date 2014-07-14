@@ -194,7 +194,19 @@
 
         <div id="content-area">
 
-          <table id="pbslisting" width="100%"><!-- filled with some magic JS right now... --></table>
+          <table id="pbslisting" width="100%">
+            <thead>
+              <tr>
+                <td><p>State</p></td>
+                <td><p>City</p></td>
+                <td><p>Station</p></td>
+                <td><p>Day</p></td>
+                <td><p>Date</p></td>
+                <td><p>Time</p></td>
+              </tr>
+            </thead>
+            <!-- filled with some magic JS right now... -->
+          </table>
 
           <?php print $content; ?>
         </div>
@@ -269,7 +281,7 @@
   <!-- THIS IS THE PBS PAGE!!!! -->
   <!-- THIS IS THE PBS PAGE!!!! -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.sheetrock/0.1.3/jquery.sheetrock.min.js"></script>
+<!--   <script src="https://cdn.jsdelivr.net/jquery.sheetrock/0.1.3/jquery.sheetrock.min.js"></script> -->
 
   <script>
 
@@ -287,7 +299,7 @@
          console.log(value.channel);
       });
       $.each(data, function(data) {
-        $('#pbslisting').append('<tr><td class="channel"><p>' + this["channel"] + '</p></td><td class="city"><p>' + this["city"] + '</p></td><td class="state"><p>' + this["state"] + '</p></td><td class="day"><p>' + this["day"] + '</p></td><td class="date"><p>' + this["date"] + '</p></td><td class="time"><p>' + this["time"] + '</p></td><td class="comment"><p>' + this["comment"] + '</p></td><td class="notes"><p>' + this["notes"] + '</p></td></tr>');
+        $('#pbslisting').append('<tr><td class="state"><p>' + this["state"] + '</p></td><td class="city"><p>' + this["city"] + '</p></td><td class="channel"><p>' + this["channel"] + '</p></td><td class="day"><p>' + this["day"] + '</p></td><td class="date"><p>' + this["date"] + '</p></td><td class="time"><p>' + this["time"] + '</p></td></tr>');
       });      
     })
     .fail(function() {

@@ -211,19 +211,21 @@ div.quote p.byline {
 .callout {
   text-align: center;
   color: #FBFBDA;
-  font-weight: bold;
+  font-weight: normal;
   font-family: 'BryantBold',helvetica,arial,sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 150%;
 }
 
 .callout a {
   background: #E7002D;
   color: #FBFBDA;
   display: block;
+  width: 550px;
+  margin: auto;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  font-size: 1.5em;
   text-decoration: none;
 }
 
@@ -410,8 +412,7 @@ table#attachments tr.odd { background: rgba(240,240,240,.25); }
   color: black;
 }
 /* display: none; tricks */
-div.description.mollom-privacy,
-.page-trailer h1.title 
+div.description.mollom-privacy 
 { display: none; }  
   
 .node-unpublished {
@@ -619,3 +620,20 @@ div.description.mollom-privacy,
   padding: 0;
 }
 
+
+/** PBS LISTINGS **/
+
+#pbslisting thead td p {
+  font-family: 'BryantBold', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #66AA22;
+}
+
+#pbslisting tr {
+  border-bottom: 1px solid #444;
+}
+
+#pbslisting td p {
+  margin: .66em 0;
+}
