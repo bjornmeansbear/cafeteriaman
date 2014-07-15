@@ -86,6 +86,10 @@ li a.active { color: #000; text-decoration: line-through; }
 #primary > ul > li.leaf {
   background: rgb(102,170,34);
   text-align: center;
+  border-radius: 20px;
+  font-size: 75%;
+  width: 85%;
+  margin: 5px auto;
 }
 
 #primary ul li.expanded > ul {

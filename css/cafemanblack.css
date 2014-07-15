@@ -74,6 +74,7 @@ div.node.node-type-event div.field-type-date {
 .allcaps { text-transform: uppercase; }
 .big { font-size: 133%; margin:0; }
 .small { line-height: 133%;margin:5px 0 0 0; }
+
 /**/
 #content-area a { color: #FBFBDA; text-decoration: none; }
 #content-area a:hover, #content-area a:focus { color: black; background: #FBFBDA; }
@@ -623,16 +624,32 @@ div.description.mollom-privacy
 
 /** PBS LISTINGS **/
 
-#pbslisting thead td p {
+#pbslisting thead td p,
+#pbslisting thead td button {
   font-family: 'BryantBold', helvetica, arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #66AA22;
 }
 
+#pbslisting thead td button {
+  text-align: left;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
 #pbslisting tr {
   border-bottom: 1px solid #444;
 }
+
+#pbslisting thead tr {
+  border-top: 1px solid #66AA22;
+  border-color: #66AA22;
+}
+
 
 #pbslisting td p {
   margin: .66em 0;
