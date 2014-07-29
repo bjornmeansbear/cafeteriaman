@@ -290,6 +290,7 @@
       
       $('#pbslisting tbody').addClass('list');
       $('#node-122 > div.content ').attr('id', 'pbsshows');
+      $('#pbslisting td.state p ').text().toUpperCase();
 
       var options = {
         valueNames: [ 'state', 'city', 'channel', 'day', 'date', 'time' ]
